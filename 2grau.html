@@ -2,54 +2,71 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src=""></script>
-<link rel= "stylesheet" type="text/css" href="2grau.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="script2.js"></script>
+<link rel= "stylesheet" type="text/css" href="2grau.css"/>
 <link rel="stylesheet" type="text/css" href="http://overpass-30e2.kxcdn.com/overpass.css" />
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body style="margin-left:15px;">
-  <br>
-  <h1> Snizer Cramer Online By Rafael Faustini</h1>
-  <h2> Resolução de Equações do segundo grau</h2>
-  <h3>Essa calculadora permite a resolução de equações do segundo grau.</h3>
 
-  <br>
-<table>
-   <tr>
-     <td><input type="number" name="a" id="a"  value="" ><b><font class="txt"> x²&nbsp</font></b></td>
-     <td><input type="number" name="b" id="b" value=""><b><font class="txt"> x&nbsp</b></font></td>
-     <td><input type="number" name="c" id="c" value=""><b><font class="txt"> = 0</b></font></td>
-  </tr>
-</table>
-<br>
-<button class="pure-button pure-button-primary" style="background-color: #c3551e;" onclick="exec()">Calcular</button>
-
-<br><br>
-<hr color="white">
-<font color="white"> <button id="ex" class="link"><b>&#x25CB Exemplo de sistema para entrada</b></button></font>
-<script>
-var button = document.getElementById("ex");
-button.onclick = function(){
-document.getElementById("a").value = "2";
-document.getElementById("b").value = "-1";
-document.getElementById("c").value = "8";
-}
-
-</script>
-
-<p class="box" >
-
-<span style="text-align: center;">
-<font color="white">2x²-x+8=0</font>
-</span>
-
-</p>
-
-<font color="white"> <b>&#x25CB Essa aplicação está em testes, problemas são recorrentes <b></font><br>
-<font color="white"> <b>&#x25CB Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustini.com.br)</b></font>
-
+<body style="background-color:#2ecc71;">
+    <br>
+<header class="masthead">
+  <div class="container-fluid" style="color:white">
+    <center>
+        <div class="row">
+    <h2 class="text-center text-uppercase "> Snizer Cramer Online By Rafael Faustini</h1>
+    <h4 class="text-center"> Resolução de Equações do segundo grau</h2>
+    <h5 class="text-center">Essa calculadora permite a resolução de equações do segundo grau.</h3>
+    <h3 class="text-center">ax² + bx + c = 0</h4>
 </div>
 
+    <br>
+  <div class="row">
+    <div class="form-group col-lg-3">
+    <input type="number" class="form-control" name="a" id="a"  value="" placeholder="Insira o valor de a">
+  </div>
+  <div class="form-group col-lg-3">
+    <div class="form-group">
+    <input type="number" class="form-control" name="b" id="b" value="" placeholder="Insira o valor de b">
+  </div>
+</div>
+    <div class="form-group col-lg-3">
+<input type="number" class="form-control" name="c" id="c" value="" placeholder="Insira o valor de c">
+  </div>
+</div>
+    <div class="row">
+  <br>
+  <button class="btn btn-danger btn-xl text-uppercase" onclick="exec()" style="margin-left:1vw">Calcular</button>
+</div>
+  <br><br>
+  <hr color="white">
+
+  <font color="white"> <button id="ex" class="link"><b>Exemplo de sistema para entrada</b></button></font>
+
+  <script>
+  var button = document.getElementById("ex");
+  button.onclick = function(){
+  document.getElementById("a").value = "2";
+  document.getElementById("b").value = "-1";
+  document.getElementById("c").value = "8";
+  }
+
+  </script>
+
+  <p class="box" >
+
+  <span style="text-align: center;">
+  <font color="white">2x²-x+8=0</font>
+  </span>
+
+  </p>
+
+  <font color="white"> <b>Essa aplicação está em testes, problemas são recorrentes <b></font><br>
+  <font color="white"> <b>Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustini.com.br)</b></font>
+</center>
+</div>
+</div>
+</header>
 </body>
 </html>
